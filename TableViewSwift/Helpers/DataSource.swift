@@ -86,6 +86,8 @@ extension DataSource where Model == Item {
 // MARK: SectionedTableViewDataSource Implementation
 class SectionedTableViewDataSource: NSObject {
   private let dataSources: [UITableViewDataSource]
+  var headers: [String]?
+  var headerReuseIndentifier: String?
   
   init(dataSources: [UITableViewDataSource]) {
     self.dataSources = dataSources
@@ -110,4 +112,12 @@ extension SectionedTableViewDataSource: UITableViewDataSource {
     let indexPath = IndexPath(row: indexPath.row, section: 0)
     return dataSource.tableView(tableView, cellForRowAt: indexPath)
   }
+  
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    if section < headers?.count ?? 0 {
+      return headers?[section]
+    }
+    return nil
+  }
+  
 }

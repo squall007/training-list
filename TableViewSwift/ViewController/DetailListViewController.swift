@@ -24,8 +24,10 @@ class DetailListViewController: UIViewController, Storyboarded, UITableViewDeleg
       let aSource = DataSource.make(for: section.items, reuseIdentifier: "rowCell")
       return aSource
     }
+    let headerArray = sectionsData.map { $0.name }
     print(sectionDataSource)
     dataSource = SectionedTableViewDataSource(dataSources: sectionDataSource)
+    dataSource?.headers = headerArray
     tableView.dataSource = dataSource
     tableView.delegate = self
     tableView.rowHeight = UITableView.automaticDimension
@@ -33,6 +35,12 @@ class DetailListViewController: UIViewController, Storyboarded, UITableViewDeleg
     tableView.reloadData()
     tableView.tableFooterView = UIView()
     
+  }
+  
+  
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let headerView = tableView.dequeueReusableCell(withIdentifier: "headerCell")
+    return headerView
   }
   
   // MARK: Tableview Delegate

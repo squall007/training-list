@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "98F242C6-45DD-47A5-9DC8-B88D0BDE93CF"
-            shouldBeEnabled = "Yes"
+            uuid = "43328D49-92B2-4338-B80B-4698134CAE54"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TableViewSwift/ViewController/DetailListViewController.swift"
+            filePath = "TableViewSwift/Helpers/DataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
