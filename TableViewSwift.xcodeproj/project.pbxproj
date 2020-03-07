@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		F471167E2413408400351106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471167D2413408400351106 /* AppDelegate.swift */; };
 		F47116802413408400351106 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471167F2413408400351106 /* SceneDelegate.swift */; };
-		F47116822413408400351106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116812413408400351106 /* ViewController.swift */; };
+		F47116822413408400351106 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116812413408400351106 /* ListViewController.swift */; };
 		F47116852413408400351106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47116832413408400351106 /* Main.storyboard */; };
 		F47116872413408800351106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47116862413408800351106 /* Assets.xcassets */; };
 		F471168A2413408800351106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47116882413408800351106 /* LaunchScreen.storyboard */; };
 		F47116952413408900351106 /* TableViewSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116942413408900351106 /* TableViewSwiftTests.swift */; };
 		F47116A02413408900351106 /* TableViewSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471169F2413408900351106 /* TableViewSwiftUITests.swift */; };
+		F47116B4241341F700351106 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116B3241341F700351106 /* DetailListViewController.swift */; };
+		F47116B62413420600351106 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116B52413420600351106 /* OverlayViewController.swift */; };
+		F47116B82413424200351106 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116B72413424200351106 /* ListViewModel.swift */; };
+		F47116BA2413425100351106 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116B92413425100351106 /* ListCoordinator.swift */; };
+		F4EFEBF12413453600E7F1C6 /* FundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFEBF02413453600E7F1C6 /* FundTableViewCell.swift */; };
+		F4EFEBF32413454200E7F1C6 /* AmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFEBF22413454200E7F1C6 /* AmountTableViewCell.swift */; };
+		F4EFEBF62413460200E7F1C6 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFEBF52413460200E7F1C6 /* DataSource.swift */; };
+		F4EFEBF82413EC6700E7F1C6 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFEBF72413EC6700E7F1C6 /* ExampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +46,7 @@
 		F471167A2413408400351106 /* TableViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471167D2413408400351106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F471167F2413408400351106 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F47116812413408400351106 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F47116812413408400351106 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F47116842413408400351106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47116862413408800351106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47116892413408800351106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		F471169B2413408900351106 /* TableViewSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471169F2413408900351106 /* TableViewSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSwiftUITests.swift; sourceTree = "<group>"; };
 		F47116A12413408900351106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47116B3241341F700351106 /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
+		F47116B52413420600351106 /* OverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		F47116B72413424200351106 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F47116B92413425100351106 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		F4EFEBF02413453600E7F1C6 /* FundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTableViewCell.swift; sourceTree = "<group>"; };
+		F4EFEBF22413454200E7F1C6 /* AmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTableViewCell.swift; sourceTree = "<group>"; };
+		F4EFEBF52413460200E7F1C6 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		F4EFEBF72413EC6700E7F1C6 /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,15 @@
 		F471167C2413408400351106 /* TableViewSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F4EFEBEF241344FF00E7F1C6 /* Cells */,
+				F47116B22413411900351106 /* Helpers */,
+				F47116B12413411000351106 /* Protocols */,
+				F47116B02413410600351106 /* Coordinator */,
+				F47116AF241340FE00351106 /* Viewmodels */,
+				F47116AE241340F600351106 /* Models */,
+				F47116AD241340E900351106 /* ViewController */,
 				F471167D2413408400351106 /* AppDelegate.swift */,
 				F471167F2413408400351106 /* SceneDelegate.swift */,
-				F47116812413408400351106 /* ViewController.swift */,
 				F47116832413408400351106 /* Main.storyboard */,
 				F47116862413408800351106 /* Assets.xcassets */,
 				F47116882413408800351106 /* LaunchScreen.storyboard */,
@@ -126,6 +148,64 @@
 				F47116A12413408900351106 /* Info.plist */,
 			);
 			path = TableViewSwiftUITests;
+			sourceTree = "<group>";
+		};
+		F47116AD241340E900351106 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F47116812413408400351106 /* ListViewController.swift */,
+				F47116B3241341F700351106 /* DetailListViewController.swift */,
+				F47116B52413420600351106 /* OverlayViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F47116AE241340F600351106 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F47116AF241340FE00351106 /* Viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				F47116B72413424200351106 /* ListViewModel.swift */,
+			);
+			path = Viewmodels;
+			sourceTree = "<group>";
+		};
+		F47116B02413410600351106 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F47116B92413425100351106 /* ListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F47116B12413411000351106 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F47116B22413411900351106 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F4EFEBF52413460200E7F1C6 /* DataSource.swift */,
+				F4EFEBF72413EC6700E7F1C6 /* ExampleData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F4EFEBEF241344FF00E7F1C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4EFEBF02413453600E7F1C6 /* FundTableViewCell.swift */,
+				F4EFEBF22413454200E7F1C6 /* AmountTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47116822413408400351106 /* ViewController.swift in Sources */,
+				F47116822413408400351106 /* ListViewController.swift in Sources */,
+				F4EFEBF32413454200E7F1C6 /* AmountTableViewCell.swift in Sources */,
 				F471167E2413408400351106 /* AppDelegate.swift in Sources */,
+				F4EFEBF82413EC6700E7F1C6 /* ExampleData.swift in Sources */,
+				F4EFEBF12413453600E7F1C6 /* FundTableViewCell.swift in Sources */,
+				F47116B82413424200351106 /* ListViewModel.swift in Sources */,
+				F47116BA2413425100351106 /* ListCoordinator.swift in Sources */,
+				F47116B62413420600351106 /* OverlayViewController.swift in Sources */,
 				F47116802413408400351106 /* SceneDelegate.swift in Sources */,
+				F4EFEBF62413460200E7F1C6 /* DataSource.swift in Sources */,
+				F47116B4241341F700351106 /* DetailListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
