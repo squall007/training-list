@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F408111C241489650093A32C /* DetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408111B241489650093A32C /* DetailListViewModel.swift */; };
+		F408111E241497A70093A32C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408111D241497A70093A32C /* Enums.swift */; };
 		F471167E2413408400351106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471167D2413408400351106 /* AppDelegate.swift */; };
 		F47116802413408400351106 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471167F2413408400351106 /* SceneDelegate.swift */; };
 		F47116822413408400351106 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47116812413408400351106 /* ListViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F408111B241489650093A32C /* DetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewModel.swift; sourceTree = "<group>"; };
+		F408111D241497A70093A32C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F471167A2413408400351106 /* TableViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471167D2413408400351106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F471167F2413408400351106 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				F47116B72413424200351106 /* ListViewModel.swift */,
+				F408111B241489650093A32C /* DetailListViewModel.swift */,
 			);
 			path = Viewmodels;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			children = (
 				F4EFEBF52413460200E7F1C6 /* DataSource.swift */,
 				F4EFEBF72413EC6700E7F1C6 /* ExampleData.swift */,
+				F408111D241497A70093A32C /* Enums.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -346,10 +352,12 @@
 				F4EFEBF12413453600E7F1C6 /* FundTableViewCell.swift in Sources */,
 				F47116B82413424200351106 /* ListViewModel.swift in Sources */,
 				F47116BA2413425100351106 /* ListCoordinator.swift in Sources */,
+				F408111E241497A70093A32C /* Enums.swift in Sources */,
 				F47116B62413420600351106 /* OverlayViewController.swift in Sources */,
 				F47116802413408400351106 /* SceneDelegate.swift in Sources */,
 				F4EFEBF62413460200E7F1C6 /* DataSource.swift in Sources */,
 				F47116B4241341F700351106 /* DetailListViewController.swift in Sources */,
+				F408111C241489650093A32C /* DetailListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

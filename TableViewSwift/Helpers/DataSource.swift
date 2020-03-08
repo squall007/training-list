@@ -11,9 +11,10 @@ import UIKit
 
 // MARK: Data Source Implementation
 class DataSource<Model>: NSObject, UITableViewDataSource {
-  typealias CellConfigurator = (Model, UITableViewCell) -> Void
-  var models: [Model]
   
+  typealias CellConfigurator = (Model, UITableViewCell) -> Void
+  
+  var models: [Model]
   private let reuseIdentifier: String
   private let cellConfigurator: CellConfigurator
   
@@ -24,7 +25,7 @@ class DataSource<Model>: NSObject, UITableViewDataSource {
     self.reuseIdentifier = reuseIdentifier
     self.cellConfigurator = cellConfigurator
   }
-  
+  // MARK: Tableview DataSource methods
   func tableView(_ tableView: UITableView,
                  numberOfRowsInSection section: Int) -> Int {
     return models.count
@@ -85,7 +86,7 @@ extension DataSource where Model == Item {
 
 // MARK: SectionedTableViewDataSource Implementation
 class SectionedTableViewDataSource: NSObject {
-  private let dataSources: [UITableViewDataSource]
+  let dataSources: [UITableViewDataSource]
   var headers: [String]?
   var headerReuseIndentifier: String?
   

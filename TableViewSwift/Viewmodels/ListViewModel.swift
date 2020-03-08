@@ -38,7 +38,10 @@ class ListViewModel: ListViewModelInterface {
       coordinatorDelegate?.goToDetailView()
     } else if item.name == "To" {
       coordinatorDelegate?.presentAmountView()
-
+    } else if item.name == "Amount" {
+      print("Amount")
+    } else if item.name == "Year" {
+      print("Year")
     }
     print("selected")
   }

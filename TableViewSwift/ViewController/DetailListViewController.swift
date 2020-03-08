@@ -8,18 +8,19 @@
 
 import UIKit
 
-class DetailListViewController: UIViewController, Storyboarded, UITableViewDelegate {
+class DetailListViewController: UIViewController, Storyboarded, UITableViewDelegate, DetailListViewModelViewDelegate {
   
   @IBOutlet weak var tableView: UITableView!
   var dataSource: SectionedTableViewDataSource?
-
+  var viewModel: DetailListViewModel? {
+    willSet {
+      viewModel?.listVMViewDelegate = self
+    }
+  }
+  
+  // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-//    let dataSource = SectionedTableViewDataSource(dataSources: [
-//        TableViewDataSource.make(for: recentContacts),
-//        TableViewDataSource.make(for: topMessages)
-//    ])
-//    tableView.dataSource = dataSource
     let sectionDataSource = sectionsData.map { (section) -> DataSource<Item> in
       let aSource = DataSource.make(for: section.items, reuseIdentifier: "rowCell")
       return aSource
@@ -34,21 +35,18 @@ class DetailListViewController: UIViewController, Storyboarded, UITableViewDeleg
     tableView.estimatedRowHeight = 600
     tableView.reloadData()
     tableView.tableFooterView = UIView()
-    
   }
   
-  
+  // MARK: Tableview Delegate methods
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let headerView = tableView.dequeueReusableCell(withIdentifier: "headerCell")
     return headerView
   }
   
-  // MARK: Tableview Delegate
-//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    guard let item = dataSource?.models[indexPath.row] else {
-//      return
-//    }
-//    viewModel?.didSelect(item: item)
-//    }
-//  }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let section = dataSource?.dataSources[indexPath.section] as! DataSource<Item>
+    let model = section.models[indexPath.row]
+    viewModel?.detailListViewModeldidSelect(item: model)
+    print(model)
+  }
 }
